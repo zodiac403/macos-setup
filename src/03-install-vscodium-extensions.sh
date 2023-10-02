@@ -7,9 +7,9 @@ for EXTENSION in \
   emilast.LogFileHighlighter \
   esbenp.prettier-vscode \
   mechatroner.rainbow-csv \
-  streetsidesoftware.code-spell-checker \
+  streetsidesoftware.code-spell-checker;
 do
-  codium --install-extension $EXTENSION
+  codium --install-extension $EXTENSION;
 done
 
 echo "=== INSTALL MARKDOWN EXTENSIONS ==="
@@ -20,9 +20,9 @@ for EXTENSION in \
   huntertran.auto-markdown-toc \
   marp-team.marp-vscode \
   sugatoray.vscode-markdown-extension-pack \
-  yzane.markdown-pdf \
+  yzane.markdown-pdf;
 do
-  codium --install-extension $EXTENSION
+  codium --install-extension $EXTENSION;
 done
 
 echo "== SUCCESS =="
