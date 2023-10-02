@@ -23,7 +23,7 @@ for EXTENSION in \
   ms-python.pylint \
   LittleFoxTeam.vscode-python-test-adapter
 do
-	codium --install-extension $EXTENSION
+  codium --install-extension $EXTENSION
 done
 
 echo "== SUCCESS =="
