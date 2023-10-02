@@ -3,6 +3,7 @@ echo "== INSTALL PYTHON =="
 PYTHON_VERSION="3.9"
 
 echo "=== BREW INSTALL ==="
+brew --version  # check brew installation
 brew update && brew upgrade
 brew install pyenv
 
