@@ -4,6 +4,7 @@ echo "=== BREW INSTALL ==="
 brew --version  # check brew installation
 brew update && brew upgrade
 brew install \
+  awscli \
   git \
   jq \
   node \
@@ -13,7 +14,10 @@ brew install --cask \
   brave-browser \
   chromium \
   keepassxc \
-  vscodium
+  inkscape \
+  rectangle \
+  vscodium \
+  yed
 
 echo "=== VERIFY VERSIONS ==="
 echo "codium --version" && codium --version
