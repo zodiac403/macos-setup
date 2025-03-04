@@ -1,7 +1,8 @@
 echo "== INSTALL BASEIC APPLICATIONS =="
 
+echo ""
 echo "=== BREW INSTALL ==="
-brew --version  # check brew installation
+brew --version # check brew installation
 brew update && brew upgrade
 brew install \
   awscli \
@@ -15,13 +16,16 @@ brew install --cask \
   chromium \
   keepassxc \
   inkscape \
+  podman \
   rectangle \
-  vscodium \
+  visual-studio-code \
   yed
 
 echo "=== VERIFY VERSIONS ==="
-echo "codium --version" && codium --version
+echo "code --version" && code --version
 echo "node --version" && node --version
 echo "npm --version" && npm --version
+echo "podman --version" && podman --version
 
+echo ""
 echo "== SUCCESS =="
