@@ -1,8 +1,5 @@
 echo "== INSTALL JAVA AND KOTLIN =="
 
-echo "WARN: Will git clone into you home directory. Make sure to review"
-echo "      the code before execution."
-
 echo ""
 echo "=== BREW INSTALL ==="
 brew --version # check brew installation
@@ -11,9 +8,9 @@ brew install kubectl
 
 echo ""
 echo "=== CONFIGURE KUBECTL ALIASES ==="
-echo "    reference <https://github.com/ahmetb/kubectl-aliases>"
+echo "-> reference: <https://github.com/ahmetb/kubectl-aliases>"
 ALIASES_FILE="~/.kubectl_aliases"
-curl -fs https://github.com/ahmetb/kubectl-aliases/blob/master/.kubectl_aliases > ${ALIASES_FILE}
+curl -fs https://raw.githubusercontent.com/ahmetb/kubectl-aliases/refs/heads/master/.kubectl_aliases > ${ALIASES_FILE}
 
 for RC_FILE in \
     "~/.bashrc" \
