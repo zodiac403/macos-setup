@@ -1,0 +1,23 @@
+/* Copyright 2025 zodiac403 <zodiac403@protonmail.com>, see LICENSE */
+
+/* Enable VS Code plugin _yzane.markdown-pdf_ to use */
+/* font family "Noto Sans" for outputs. */
+
+body {
+    font-family: "Noto Sans";
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h1 {
+  line-height: 1.4;
+  border-bottom-style: none;
+}
+
+h2 {
+  line-height: 1.2;
+  border-bottom-width: 1.25px;
+  border-bottom-style: solid;
+}
