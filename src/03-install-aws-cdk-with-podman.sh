@@ -1,14 +1,7 @@
 echo "== INSTALL AWS CDK =="
 
-echo "=== CHECK, INSTALL, AND COONFIGURE PODMAN ==="
-if [[ command -v podman &> /dev/null ]]
-then
-    echo "Install podman"
-    brew install podman
-else
-    echo "Podman already installed"
-    podman --version
-fi
+echo "=== CHECK AND CONFIGURE PODMAN ==="
+podman --version
 
 BIN_DOCKER_PATH = "/usr/local/bin/docker"
 cat << EOF > $BIN_DOCKER_PATH

@@ -1,4 +1,4 @@
-echo "== INSTALL BASEIC APPLICATIONS =="
+echo "== INSTALL BASIC APPLICATIONS =="
 
 echo ""
 echo "=== BREW INSTALL ==="
@@ -9,15 +9,15 @@ brew install \
   git \
   jq \
   node \
+  podman \ 
   protobuf
 
 brew install --cask \
   brave-browser \
-  chromium \
+  google-chrome \
   keepassxc \
   inkscape \
-  podman \
-  rectangle \
+  obsidian \
   visual-studio-code \
   yed
 

@@ -1,12 +1,19 @@
 echo "== INSTALL PYTHON =="
 
-PYTHON_VERSION="3.12"
+PYTHON_VERSION="3.14"
+CODE="code" # can switch to `codium` or `kiro`
 
 echo ""
 echo "=== BREW INSTALL ==="
 brew --version # check brew installation
 brew update && brew upgrade
-brew install pyenv
+brew install \
+  pyenv \
+  uv
+
+echo "check version"
+pyenv --version
+uv --version
 
 echo ""
 echo "=== PYENV INSTALL ==="
@@ -25,13 +32,13 @@ pip3 install \
 
 echo ""
 echo "=== CODE INSTALL EXTENSIONS ==="
-code --version # check code installation
+$CODE --version # check code installation
 for EXTENSION in \
   ms-python.python \
   ms-python.isort \
   ms-python.pylint \
   LittleFoxTeam.vscode-python-test-adapter; do
-  code --install-extension $EXTENSION
+  $CODE --install-extension $EXTENSION
 done
 
 echo ""
